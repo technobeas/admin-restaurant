@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 // import "../style/Sidebar.css";
-import '../Style/sideBar.css'
+import '../Style/SideBar.css'
 import { useAuth } from "../context/AuthContext";
 // import { toast } from "react-toastify";
 
