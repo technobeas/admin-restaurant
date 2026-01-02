@@ -1,0 +1,133 @@
+/* Wrapper */
+.add-product {
+  margin-left: 220px;
+  padding: 28px;
+  min-height: calc(100vh - 56px);
+  background: #FAF7F5;
+  color: #2B2B2B;
+  margin-top: 55px;
+}
+
+/* Card form */
+.add-product__form {
+  max-width: 520px;
+  background: #FFFFFF;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+.add-product__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2B2B2B;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group-checkbox {
+  margin-top: 12px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: #6B5E57;
+  font-size: 13px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #6B5E57;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #E7E2DF;
+  background: #FFFFFF;
+  color: #2B2B2B;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #A39B96;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #5C4033;
+  box-shadow: 0 0 0 3px rgba(92, 64, 51, 0.12);
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+/* Image upload */
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-upload input[type="file"] {
+  color: #6B5E57;
+}
+
+/* Preview */
+.image-preview {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #E7E2DF;
+  background: #FFFFFF;
+}
+
+/* Submit */
+.submit-btn {
+  margin-top: 12px;
+  padding: 14px;
+  background: #5C4033;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background: #4A3328;
+  transform: translateY(-1px);
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 768px) {
+  .add-product {
+    margin-left: 0;
+    padding: 18px;
+  }
+
+  .add-product__form {
+    max-width: 100%;
+    padding: 22px;
+  }
+}

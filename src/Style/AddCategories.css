@@ -1,0 +1,140 @@
+/* Wrapper */
+.add-category {
+  margin-left: 220px;
+  padding: 28px;
+  min-height: calc(100vh - 56px);
+  background: #FAF7F5;       /* cream */
+  color: #2B2B2B;
+  margin-top: 55px;
+}
+
+/* Card container (recommended) */
+.add-category__form {
+  max-width: 500px;
+  background: #FFFFFF;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+.add-category__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2B2B2B;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #6B5E57;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #E7E2DF;
+  background: #FFFFFF;
+  color: #2B2B2B;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #A39B96;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #5C4033; /* mocha */
+  box-shadow: 0 0 0 3px rgba(92, 64, 51, 0.12);
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+/* Image upload */
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* File upload box */
+.file-upload-box {
+  border: 1px dashed #C8BFB9;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #6B5E57;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.file-upload-box:hover {
+  border-color: #5C4033;
+  color: #5C4033;
+  background: #F7F2EF;
+}
+
+/* Image preview */
+.image-preview {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #E7E2DF;
+  background: #FFFFFF;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 10px;
+  padding: 14px;
+  background: #5C4033; /* mocha */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background: #4A3328;
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .add-category {
+    margin-left: 0;
+    padding: 18px;
+  }
+
+  .add-category__form {
+    max-width: 100%;
+    padding: 22px;
+  }
+}

@@ -1,0 +1,20 @@
+/* Root wrapper */
+.admin-app {
+  min-height: 100vh;
+  background: #fff7fb; /* soft pink-white */
+  color: #1f2937; /* dark gray text */
+}
+
+/* Body under navbar */
+.admin-body {
+  display: flex;
+  margin-top: 56px; /* navbar height */
+}
+
+/* Right content */
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background: #fff7fb; /* same as app bg */
+  min-height: calc(100vh - 56px);
+}

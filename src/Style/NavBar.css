@@ -1,0 +1,68 @@
+.admin-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 18px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E7E2DF; /* soft beige divider */
+  z-index: 100;
+}
+
+/* Left group */
+.admin-navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Hamburger */
+.admin-navbar__menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #2B2B2B;
+  cursor: pointer;
+}
+
+/* Logo */
+.admin-navbar__logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2B2B2B;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.admin-navbar__logo span {
+  color: #5C4033; /* mocha accent */
+}
+
+/* Profile avatar */
+.admin-navbar__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #F3ECE8; /* soft cream */
+  color: #5C4033;
+  font-weight: 600;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 Mobile only */
+@media (max-width: 768px) {
+  .admin-navbar__menu {
+    display: block;
+  }
+}
